@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+  font-family: "Grandstander", cursive;
+}
+body {
+  font-size: 20px;
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+header {
+  width: 100%;
+  background-color: rgb(108, 82, 255);
+  text-align: center;
+}
+img {
+  margin-top: 5em;
+  width: 300px;
+  height: 190px;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.letter {
+  display: flex;
+  width: 180px;
+  height: 100px;
+  min-height: 100px;
+  background-color: green;
+  align-items: center;
+  justify-content: center;
+}
+.lettersContainer {
+  margin-top: 5em;
+  display: grid;
+  text-align: center;
+  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(4, 150px);
+  gap: 3em;
+}
